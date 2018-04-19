@@ -11,8 +11,9 @@ import Bootstrap from '../../js/redux/test/bootstrap';
 import Toutiao from '../../js/redux/toutiao';
 
 if(document.getElementById('app') != null){
+    /*
     ReactDOM.render(
-        <BrowserRouter basename="/react">
+        <BrowserRouter basename="/">
             <Switch>
                 <Route exact path="/" component={Test} />
                 <Route path="/test" component={Test} />
@@ -21,6 +22,12 @@ if(document.getElementById('app') != null){
                 <Route path="/toutiao" component={Toutiao} />
             </Switch>
         </BrowserRouter>,
+        document.getElementById('app')
+    );
+    */
+
+    ReactDOM.render(
+        <Toutiao/>,
         document.getElementById('app')
     );
 }

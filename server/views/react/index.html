@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>React</title>
+    <title><?= title ?></title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <? if (env === "production") { ?>
-        <link rel="stylesheet" href="<?= serverPrefix ?>/page/react/index.css?v=<?= version ?>" />
+        <link rel="stylesheet" href="<?= serverPrefix ?>/wildsPAGE/react/index.css?v=<?= version ?>" />
     <? } ?>
 </head>
 <body>
 <div id="app"></div>
 
 <? if (env !== "production" && reload === true) { ?>
-    <script src="<?= serverPrefix ?>/vendor.a3e5a454ebdab64af001.js"></script>
+    <script src="<?= serverPrefix ?>/wildsJS/vendor.a3e5a454ebdab64af001.js"></script>
 <? } ?>
 
-<script src="<?= serverPrefix ?>/page/react/bundle.js?v=<?= version ?>" type="text/javascript"></script>
+<script src="<?= serverPrefix ?>/wildsPAGE/react/bundle.js?v=<?= version ?>" type="text/javascript"></script>
 
 <? if (env !== "production" && reload === true) { ?>
     <script src="/reload/reload.js"></script>

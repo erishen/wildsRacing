@@ -21,7 +21,7 @@ module.exports = {
         vendor: vendors,
     },
     output: {
-        path: path.resolve(__dirname, './public'),
+        path: path.resolve(__dirname, './public/wildsJS'),
         filename: '[name].[chunkhash].js',
         library: '[name]_[chunkhash]',
     },

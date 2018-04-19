@@ -54,10 +54,10 @@ if (isDev) {
 
     app.use(serverPrefix, express.static(path.join(__dirname, publicDictionary)));
 
-    serverRoute(app);
-
     var server = http.createServer(app);
     require('reload')(server, app);
+
+    serverRoute(app);
 
     // browsersync is a nice choice when modifying only views (with their css & js)
     var bs = require('browser-sync').create();

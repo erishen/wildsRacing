@@ -8,7 +8,11 @@ import version from '../config/version';
 var router = express.Router();
 
 router.get('/', function(req, res) {
-    res.render('react', { version: version, serverPrefix: projectConfig.serverPrefix });
+    res.render('react', {
+        version: version,
+        title: 'React',
+        serverPrefix: projectConfig.serverPrefix
+    });
 });
 
 export default router;

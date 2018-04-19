@@ -7,5 +7,5 @@ var serverPrefix = projectConfig.serverPrefix;
 
 export default function(app){
     app.use(serverPrefix + '/static', staticRouter);
-    app.use(serverPrefix + '/react*', reactRouter);
+    app.use(serverPrefix + '/*', reactRouter);
 };

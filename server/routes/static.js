@@ -17,8 +17,9 @@ var firstUpper = function(str){
 };
 
 var renderWrite = function(req, res, route, callback){
-    res.render(route, {
+    res.render('react', {
         version: version,
+        title: firstUpper(route),
         serverPrefix: projectConfig.serverPrefix,
         ip: systemService.getIPAdress()
     }, function(err, html){
@@ -83,7 +84,7 @@ var renderWriteLoop = function(req, res, routeIndex, routeArray, resultArray, ca
 router.get('/', function(req, res) {
     if(!isDev) {
         var resultArray = [];
-        var routeArray = ['react'];
+        var routeArray = ['toutiao'];
         renderWriteLoop(req, res, 0, routeArray, resultArray, function(result){
             res.send(result);
         });
