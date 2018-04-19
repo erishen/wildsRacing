@@ -1,0 +1,6 @@
+/**
+ * Created by lei_sun on 2018/4/19.
+ */
+export const GET_TOUTIAO_LIST = 'GET_TOUTIAO_LIST';
+export const GET_TOUTIAO_LIST_SUCCEEDED = 'GET_TOUTIAO_LIST_SUCCEEDED';
+export const GET_TOUTIAO_LIST_FAILED = 'GET_TOUTIAO_LIST_FAILED';

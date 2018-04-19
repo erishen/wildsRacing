@@ -1,0 +1,15 @@
+.DS_STORE
+*.log
+coverage
+.idea/
+.yarn-cache
+node_modules/
+package-lock.json
+dest
+bundle.js
+index.css
+server.release
+server/certrequest.csr
+server/certrequest.pem
+server/privatekey.pem
+.cache-loader
